@@ -24,3 +24,4 @@ RUN cd /root/workspace/MastersThesis && pip install spacy
 
 RUN cd /root/workspace/MastersThesis/scripts && . /root/workspace/MastersThesis/venv/bin/activate && python -m spacy download en_core_web_sm
 
+COPY "./ssh/" "/root/.ssh/"
